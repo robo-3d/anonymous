@@ -256,7 +256,7 @@ Or
 CUDA_VISIBLE_DEVICES=0 sh dist_infer.sh 1 --cfg_file ./tools/cfgs/voxel/nuscenes/minkunet_mk18_cr10.yaml --pretrained_model xxx/xxx.pth
 ```
 
-#### Waymo-C
+#### WOD-C
 ```
 sh slurm_infer.sh ${PARTITION}  ${JOB_NAME} 1  --cfg_file ./tools/cfgs/voxel/waymo/minkunet_mk18_cr10.yaml --pretrained_model xxx/xxx.pth
 ```
@@ -304,4 +304,9 @@ class KittiDataset(DatasetTemplate):
 
 ## Create Corruption Set
 You can manage to create your own "Robo3D" corrpution sets on other LiDAR-based point cloud datasets using our defined corruption types! Follow the instructions listed in [CREATE.md](docs/CREATE.md).
+
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+<br />
+This work is under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>, while some specific operations in this codebase might be with other licenses.
 
